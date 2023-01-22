@@ -5,7 +5,7 @@ from crawling_yes24 import parsing_beautifulsoup, extract_book_data
 from github_utils import get_github_repo, upload_github_issue
 
 if __name__ == '__main__':
-    access_token = os.getenv['MY_GITHUB_TOKEN']
+    access_token = os.getenv('MY_GITHUB_TOKEN')
     repository_name = 'github-action-test'
     seoul_timezone = timezone('Asia/Seoul')
     today = datetime.now(seoul_timezone)
