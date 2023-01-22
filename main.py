@@ -14,9 +14,9 @@ if __name__ == '__main__':
     yes24_kor_fiction_new_product_url = 'http://www.yes24.com/24/Category/NewProductList/001001046001?sumGb=01'
 
     soup = parsing_beautifulsoup(yes24_kor_fiction_new_product_url)
-
-    issue_title = f"YES24 한국소설 신간 도서 알림 ({today_date})"
-    uploaded_contents = extract_book_data(soup)
+    
+    issue_title = f"YES24 IT 신간 도서 알림({today_date})"
+    upload_contents = extract_book_data(soup)
     repo = get_github_repo(access_token, repository_name)
-    upload_github_issue(repo, issue_title, uploaded_contents)
-    print('Upload Github Issue Success!!')
+    upload_github_issue(repo, issue_title, upload_contents)
+    print("Upload Github Issue Success!")
