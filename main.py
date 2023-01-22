@@ -19,4 +19,4 @@ if __name__ == '__main__':
     upload_contents = extract_book_data(soup)
     repo = get_github_repo(access_token, repository_name)
     upload_github_issue(repo, issue_title, upload_contents)
-    print("Upload Github Issue Success!")
+    print("Upload Github Issue Success!!")
