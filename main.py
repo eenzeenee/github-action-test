@@ -8,7 +8,7 @@ if __name__ == '__main__':
     access_token = os.environ['MY_GITHUB_TOKEN']
     repository_name = 'github-action-test'
     seoul_timezone = timezone('Asia/Seoul')
-    today = datetime.now(seolu_timezone)
+    today = datetime.now(seoul_timezone)
     today_date = today.strftime('%Y년 %m월 %d일')
 
     yes24_kor_fiction_new_product_url = 'http://www.yes24.com/24/Category/NewProductList/001001046001?sumGb=01'
