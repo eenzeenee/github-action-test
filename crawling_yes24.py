@@ -24,7 +24,7 @@ def extract_book_data(soup):
 
     for new_book in new_books:
         book_name = new_book.select('a')[0].text
-        url_suffix = new_book.selece('a')[1].attrs['href']
+        url_suffix = new_book.select('a')[1].attrs['href']
         url = url_prefix + url_suffix
         price = new_book.select('.priceB')[0].text
 
